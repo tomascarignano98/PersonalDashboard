@@ -10,7 +10,7 @@ fetch(
     return response.json();
   })
   .then((data) => {
-    console.log(data);
+    // console.log(data);
     document.body.style.backgroundImage = `url(${data.urls.full})`;
     document.getElementById("img-author").textContent = `By: ${data.user.name}`;
   })
@@ -34,7 +34,7 @@ fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
   .then((data) => {
     const price = data.market_data.current_price.usd;
     const logo = data.image.thumb;
-    console.log(data);
+    // console.log(data);
 
     document.querySelector(".crypto-data").innerHTML = `
     <img src="${logo}" alt="" />
@@ -42,3 +42,13 @@ fetch("https://api.coingecko.com/api/v3/coins/bitcoin")
     `;
   })
   .catch((error) => console.log(error.stack));
+
+// Get and display current time
+function getCurrentTime() {
+  const date = new Date();
+  const time = date.toLocaleTimeString("en-us", { timeStyle: "short" });
+
+  document.getElementById("time").textContent = time;
+}
+
+setInterval(getCurrentTime, 1000);
