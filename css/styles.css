@@ -24,7 +24,6 @@ html {
 }
 
 body {
-  background-color: #fff;
   color: #fff;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
@@ -36,6 +35,7 @@ h2,
 p {
   margin: 0;
 }
+
 h1,
 h2 {
   margin-bottom: 1rem;
@@ -43,7 +43,7 @@ h2 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 8rem;
 }
 
 h2 {
@@ -73,3 +73,29 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+/* Layout  */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* #img-author {
+  background-image: linear-gradient(to bottom, #86868680, #86868680);
+  display: inline;
+  padding: 0.5rem;
+} */
