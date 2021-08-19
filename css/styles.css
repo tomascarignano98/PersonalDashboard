@@ -25,8 +25,8 @@ html {
 
 body {
   color: #fff;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
   line-height: 1.5;
 }
 
@@ -43,7 +43,7 @@ h2 {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -54,9 +54,13 @@ h3 {
   font-size: 1.17em;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   body {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 8rem;
   }
 }
 
@@ -80,8 +84,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 auto;
   min-height: 100vh;
-  text-shadow: 0px 0px 15px #000;
+  text-shadow: 0px 0px 15px #757575;
+  width: calc(100vw - 20px);
 }
 
 .top-row {
@@ -121,8 +127,12 @@ main {
   width: 2.7em;
 }
 
-/* #img-author {
-  background-image: linear-gradient(to bottom, #86868680, #86868680);
-  display: inline;
-  padding: 0.5rem;
-} */
+@media screen and (min-width: 900px) {
+  .crypto {
+    font-size: 2.6rem;
+  }
+
+  .weather__temperature {
+    font-size: 3rem;
+  }
+}
