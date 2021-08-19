@@ -98,6 +98,7 @@ main {
 
 .middle-row {
   text-align: center;
+  margin: 0 auto;
 }
 
 .crypto {
@@ -125,6 +126,16 @@ main {
 
 .weather__temperature img {
   width: 2.7em;
+}
+
+.quote {
+  font-style: italic;
+  max-width: 30ch;
+}
+
+.quote__author {
+  font-size: 0.83em;
+  font-style: normal;
 }
 
 @media screen and (min-width: 900px) {

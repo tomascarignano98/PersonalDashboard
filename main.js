@@ -97,3 +97,32 @@ function getCurrentTime() {
 }
 
 setInterval(getCurrentTime, 1000);
+
+// ------------------------
+// Get random quote
+fetch("https://philosophy-quotes-api.glitch.me/quotes")
+  .then((response) => {
+    if (!response.ok) throw Error(response.status);
+    return response.json();
+  })
+  .then((data) => {
+    const randInt = Math.floor(Math.random() * data.length);
+    const quote = data[randInt];
+    console.log(quote);
+    document.getElementById("quote").innerHTML = `
+        <blockquote class="quote">
+        "${quote.quote}"
+        <span class="quote__author">${quote.source}</span>
+        </blockquote>
+        `;
+  })
+  .catch((error) => {
+    console.log(error.stack);
+    document.getElementById("quote").innerHTML = `
+        <blockquote class="quote">
+        "Be kind, for everyone you meet is fighting a harder battle."
+        <span class="quote__author">Plato</span>
+        </blockquote>
+        
+        `;
+  });
