@@ -22,4 +22,4 @@ https://tomascarignano98.github.io/PersonalDashboard/
 
 ## Screenshot
 
-![Website Screenshot](https://raw.githubusercontent.com/tomascarignano98/PersonalDashboard/main/.github/images/screenshot.png)
+![image](https://user-images.githubusercontent.com/75227199/130287506-713dcc25-dd33-44cd-925f-ff14bf1dfe6f.png)
